@@ -1,3 +1,8 @@
+// function loadPage1() {
+//   $(document.querySelector(".posts")).load("../fragments/cv/pg1.html")
+// }
+
+
 function loadPage1() {
-  $(document.querySelector(".posts")).load("../fragments/cv/pg1.html")
+  $("#loader").load("..assets/fragments/pg1.html");
 }
