@@ -4,5 +4,5 @@
 
 
 function loadPage1() {
-  $("#loader").load("pg1.html");
+  $("#loader").load("assets/js/pg1.html");
 }
