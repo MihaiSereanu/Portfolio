@@ -1,8 +1,33 @@
-// function loadPage1() {
-//   $(document.querySelector(".posts")).load("../fragments/cv/pg1.html")
+// function scrollPage(x,y) {
+//   window.scrollBy(x,y);
 // }
+//
 
+$(document).ready(function() {
+  var arrow = document.getElementById('directional');
+  arrow.addEventListener("click", loadPage1)
 
-function loadPage1() {
-  $("#loader").load("assets/js/pg1.html");
-}
+  function loadPage1() {
+      var checker = document.querySelector(".loaded");
+      if (checker === null) {
+        $("#loader").load("assets/js/pg1.html");
+        arrow.setAttribute("class", 'fa fa-angle-double-up');
+      } else {
+        arrow.addEventListener("click", closePage)
+      }
+    }
+
+  function closePage() {
+    var checker = document.querySelector(".loaded");
+    if (checker !== null) {
+      $(".loaded").remove();
+      arrow.setAttribute("class", 'fa fa-angle-double-down');
+      arrow.addEventListener("click", loadPage1);
+    }
+  }
+});
+
+//
+// document.scrollIntoView({
+//   behavior: 'smooth'
+// })
