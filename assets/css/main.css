@@ -423,12 +423,13 @@ ul {
 			}
 
 		.image.profile {
-			float: left;
+			float: center;
 			width: 20%;
 			height: auto;
 			border-radius: 50%;
 			border: 2px solid #464B52;
 			box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+			overflow: hidden;
 		}
 
 		.image.left {
@@ -1065,6 +1066,10 @@ ul {
 		#nav .icons li {
 			padding: 0;
 		}
+
+		.image .profile {
+			width: 45%;
+		}
 	}
 
 		#nav ul.divided li {
@@ -1173,6 +1178,8 @@ ul {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		text-align: center;
+		overflow: auto;
 	}
 
 		#main > * {
@@ -1186,6 +1193,10 @@ ul {
 			}
 
 		#main > footer {
+			text-align: center;
+		}
+
+		#main > header {
 			text-align: center;
 		}
 
@@ -1211,6 +1222,8 @@ ul {
 				font-size: 1.25rem;
 				padding: 0 1rem;
 				margin-bottom: 5px;
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 			@media screen and (max-width: 1280px) {

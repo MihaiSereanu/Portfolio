@@ -1,8 +1,3 @@
-// function scrollPage(x,y) {
-//   window.scrollBy(x,y);
-// }
-//
-
 $(document).ready(function() {
   var arrow = document.getElementById('directional');
   arrow.addEventListener("click", loadPage1)
