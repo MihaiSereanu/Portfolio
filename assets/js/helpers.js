@@ -21,8 +21,3 @@ $(document).ready(function() {
     }
   }
 });
-
-//
-// document.scrollIntoView({
-//   behavior: 'smooth'
-// })
