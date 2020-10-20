@@ -445,7 +445,7 @@ ul {
 
 		.image.fit {
 			display: block;
-			margin: 2.5rem 0;
+			margin: 0.5rem 0;
 			width: 100%;
 		}
 
@@ -1302,6 +1302,10 @@ ul {
 
 			#main > .posts > article {
 				border-color: #eeeeee;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
 				border-left-width: 2px;
 				border-style: solid;
 				border-top-width: 2px;

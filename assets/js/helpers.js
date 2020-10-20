@@ -1,8 +1,8 @@
 $(document).ready(function() {
   var arrow = document.getElementById('directional');
-  arrow.addEventListener("click", loadPage1)
+  arrow.addEventListener("click", loadPage)
 
-  function loadPage1() {
+  function loadPage() {
       var checker = document.querySelector(".loaded");
       if (checker === null) {
         $("#loader").load("assets/js/pg1.html");
@@ -17,7 +17,8 @@ $(document).ready(function() {
     if (checker !== null) {
       $(".loaded").remove();
       arrow.setAttribute("class", 'fa fa-angle-double-down');
-      arrow.addEventListener("click", loadPage1);
+      arrow.addEventListener("click", loadPage);
     }
   }
+
 });
